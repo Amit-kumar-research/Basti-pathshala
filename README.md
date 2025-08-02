@@ -1,2 +1,2 @@
 # Basti-pathshala
-This repository represents the project of Basti Ki Pathshala
+This repository represents the Front-End project of Basti Ki Pathshala
