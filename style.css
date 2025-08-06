@@ -1,0 +1,14 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('https://placehold.co/1200x800/e2e8f0/334155?text=Children+in+Class');
+    background-size: cover;
+    background-position: center;
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basti Ki Pathshala - Education for All</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50">
+    <header class="bg-gray-800 shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-3">
+                <div class="bg-white p-1 rounded-full">
+                    <svg class="w-8 h-8" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 2 C33 2 20 15 20 32 C20 45 30 55 35 62 L35 70 C35 72 37 74 40 74 L60 74 C63 74 65 72 65 70 L65 62 C70 55 80 45 80 32 C80 15 67 2 50 2 Z" fill="#FFD700" fill-opacity="0.3"/>
+                        <path d="M50 2 C33 2 20 15 20 32 C20 45 30 55 35 62 L35 70 C35 72 37 74 40 74 L60 74 C63 74 65 72 65 70 L65 62 C70 55 80 45 80 32 C80 15 67 2 50 2 Z" stroke="#FFC107" stroke-width="2" fill="none"/>
+                        <rect x="38" y="74" width="24" height="10" rx="2" fill="#E0E0E0"/>
+                        <line x1="38" y1="78" x2="62" y2="78" stroke="#BDBDBD" stroke-width="1.5"/>
+                        <line x1="38" y1="82" x2="62" y2="82" stroke="#BDBDBD" stroke-width="1.5"/>
+                        <g transform="translate(0, 5)">
+                            <path d="M42 55 L50 48 L58 55 L58 65 L42 65 Z" fill="#26C6DA" />
+                            <path d="M50 55 C48 53 46 54 46 56 C46 58 50 61 50 61 C50 61 54 58 54 56 C54 54 52 53 50 55 Z" fill="#FFFFFF"/>
+                        </g>
+                    </svg>
+                </div>
+                <span class="text-xl font-bold text-white">Basti Ki Pathshala</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-2">
+                <a href="#home" class="px-4 py-2 text-white hover:text-yellow-300 transition-colors duration-300">Home</a>
+                <a href="#about" class="px-4 py-2 text-white hover:text-yellow-300 transition-colors duration-300">About Us</a>
+                <a href="#volunteer" class="px-4 py-2 bg-yellow-400 text-gray-800 rounded-full hover:bg-yellow-500 transition-colors duration-300">Volunteer</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4">
+            <a href="#home" class="block py-2 px-4 text-white hover:text-yellow-300">Home</a>
+            <a href="#about" class="block py-2 px-4 text-white hover:text-yellow-300">About Us</a>
+            <a href="#volunteer" class="block mt-2 py-2 px-4 text-center bg-yellow-400 text-gray-800 rounded-full hover:bg-yellow-500">Volunteer</a>
+        </div>
+    </header>
+    <main>
+        <section id="home" class="hero-bg text-white min-h-[70vh] flex items-center justify-center">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">Empowering Futures, One Child at a Time</h1>
+                <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">Providing quality education and a nurturing environment for underprivileged children in our community.</p>
+                <a href="#volunteer" class="bg-yellow-400 text-gray-800 font-bold py-3 px-8 rounded-full text-lg hover:bg-yellow-500 transition-colors duration-300">Join Us Today</a>
+            </div>
+        </section>
+
+        <section id="programs" class="py-16 sm:py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">What We Do</h2>
+                <p class="section-subtitle">We believe in holistic development. Our programs are designed to build strong academic foundations, foster creativity, and ensure the well-being of every child.</p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1618840358939-abf545b38f8d?q=80&w=2070&auto=format&fit=crop" class="w-full h-48 object-cover" alt="Children learning in a classroom" onerror="this.onerror=null;this.src='https://placehold.co/600x400/bfdbfe/1e40af?text=Academics';">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Academic Support</h3>
+                            <p class="text-gray-600">Free tutoring in Math, Science, and English to help students excel in school.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1596495759344-9365a04e8a5b?q=80&w=2070&auto=format&fit=crop" class="w-full h-48 object-cover" alt="A child painting on a canvas" onerror="this.onerror=null;this.src='https://placehold.co/600x400/fef08a/b45309?text=Arts+&+Crafts';">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Creative Arts</h3>
+                            <p class="text-gray-600">Encouraging self-expression through painting, music, and drama to build confidence.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1627822459390-3151f0352c9a?q=80&w=1974&auto=format&fit=crop" class="w-full h-48 object-cover" alt="Children eating a healthy meal" onerror="this.onerror=null;this.src='https://placehold.co/600x400/bbf7d0/166534?text=Health+&+Nutrition';">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Health & Nutrition</h3>
+                            <p class="text-gray-600">Nutritious meals and regular health check-ups to support physical well-being.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-16 sm:py-24 bg-sky-100">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">About Basti Ki Pathshala</h2>
+                <p class="section-subtitle">We are a community-driven organization with a passionate team dedicated to making a difference.</p>
+                <div class="flex flex-col md:flex-row items-center gap-12 mb-16">
+                    <div class="md:w-1/2">
+                        <img src="https://placehold.co/600x400/dbeafe/3b82f6?text=Our+Team+&+Students" alt="Our Team" class="rounded-xl shadow-lg w-full">
+                    </div>
+                    <div class="md:w-1/2 text-lg text-gray-600 space-y-4">
+                        <h3 class="font-bold text-2xl text-gray-800">Our Story</h3>
+                        <p>"Basti Ki Pathshala" started in 2018 with a simple mission: to ensure that every child, regardless of their background, has access to quality education. What began in a small rented room with 15 children has now grown into a thriving learning center supporting over 200 students.</p>
+                        <p>Our dedicated team of teachers and volunteers works tirelessly to create a safe, inclusive, and inspiring space for our children to learn and grow.</p>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 text-center">
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <h4 class="font-bold text-xl text-gray-800 mb-2">Our Mission</h4>
+                        <p class="text-gray-600">To provide accessible, high-quality education and holistic development opportunities to underprivileged children, empowering them to build a brighter future.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <h4 class="font-bold text-xl text-gray-800 mb-2">Our Vision</h4>
+                        <p class="text-gray-600">A world where every child has the support and resources they need to reach their full potential and break the cycle of poverty.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="volunteer" class="py-16 sm:py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Become a Volunteer</h2>
+                <p class="section-subtitle">Your time and skills can create a world of difference. Join our team of passionate volunteers and help us shape the future, one child at a time.</p>
+                
+                <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+                    <!-- Volunteer -->
+                    <div class="space-y-6">
+                        <h3 class="text-2xl font-bold text-gray-800">Why Your Help Matters</h3>
+                        <p class="text-gray-600">Volunteers are the backbone of our organization. You bring fresh energy, new skills, and a powerful message of hope to our children.</p>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start"><span class="text-green-500 mr-2 mt-1">&#10004;</span> <span><strong>Tutor a Child:</strong> Directly impact a student's academic journey.</span></li>
+                            <li class="flex items-start"><span class="text-green-500 mr-2 mt-1">&#10004;</span> <span><strong>Share Your Skills:</strong> Teach art, music, coding, or another skill you're passionate about.</span></li>
+                            <li class="flex items-start"><span class="text-green-500 mr-2 mt-1">&#10004;</span> <span><strong>Help with Events:</strong> Support our community events and workshops.</span></li>
+                            <li class="flex items-start"><span class="text-green-500 mr-2 mt-1">&#10004;</span> <span><strong>Be a Mentor:</strong> Guide and inspire a young mind.</span></li>
+                        </ul>
+                    </div>
+                    <!-- Form -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <h3 class="text-xl font-bold text-center mb-4">Volunteer Application</h3>
+                        <form action="#" method="POST">
+                            <div class="space-y-4">
+                                <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                <input type="email" placeholder="Your Email" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                <input type="tel" placeholder="Your Phone Number" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <textarea placeholder="Tell us about your skills and why you want to volunteer" rows="4" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                                <button type="submit" class="w-full bg-blue-700 text-white font-bold py-3 px-10 rounded-full text-lg hover:bg-blue-800 transition-colors duration-300">I Want to Help!</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white pt-12 pb-8">
+        <div class="container mx-auto px-6 text-center">
+            <a href="#" class="flex items-center justify-center space-x-3 mb-4">
+                <div class="bg-white p-1 rounded-full">
+                   <svg class="w-8 h-8" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 2 C33 2 20 15 20 32 C20 45 30 55 35 62 L35 70 C35 72 37 74 40 74 L60 74 C63 74 65 72 65 70 L65 62 C70 55 80 45 80 32 C80 15 67 2 50 2 Z" fill="#FFD700" fill-opacity="0.3"/>
+                        <path d="M50 2 C33 2 20 15 20 32 C20 45 30 55 35 62 L35 70 C35 72 37 74 40 74 L60 74 C63 74 65 72 65 70 L65 62 C70 55 80 45 80 32 C80 15 67 2 50 2 Z" stroke="#FFC107" stroke-width="2" fill="none"/>
+                        <rect x="38" y="74" width="24" height="10" rx="2" fill="#E0E0E0"/>
+                        <line x1="38" y1="78" x2="62" y2="78" stroke="#BDBDBD" stroke-width="1.5"/>
+                        <line x1="38" y1="82" x2="62" y2="82" stroke="#BDBDBD" stroke-width="1.5"/>
+                        <g transform="translate(0, 5)">
+                            <path d="M42 55 L50 48 L58 55 L58 65 L42 65 Z" fill="#26C6DA" />
+                            <path d="M50 55 C48 53 46 54 46 56 C46 58 50 61 50 61 C50 61 54 58 54 56 C54 54 52 53 50 55 Z" fill="#FFFFFF"/>
+                        </g>
+                    </svg>
+                </div>
+                <span class="text-xl font-bold">Basti Ki Pathshala</span>
+            </a>
+            <p class="mb-4">123 Learning Lane, Knowledge City, India | contact@basti-pathshala.org</p>
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="#" class="hover:text-yellow-300">Facebook</a>
+                <a href="#" class="hover:text-yellow-300">Instagram</a>
+                <a href="#" class="hover:text-yellow-300">Twitter</a>
+            </div>
+            <p class="text-gray-400 text-sm">&copy; 2025 Basti Ki Pathshala. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
